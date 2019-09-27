@@ -12,5 +12,6 @@
 	fwrite($archivo,json_encode($miobjetoVehiculo)."\n");
 	fclose($archivo);
 
+header("Location: page/IngresoPatenteOK.php");
 
 ?>	

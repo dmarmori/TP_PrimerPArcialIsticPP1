@@ -37,6 +37,9 @@
               <a class="nav-link" href="Vehiculo.php">IngresaVehiculo</a>
             </li>
             <li class="nav-item active">
+              <a rel="img/Peso.png"; style="color:blue"; class="nav-link" href="#">Facturar</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link disabled" href="MasInfo.php" target="_blank">Mas info</a>
             </li>
           </ul>
