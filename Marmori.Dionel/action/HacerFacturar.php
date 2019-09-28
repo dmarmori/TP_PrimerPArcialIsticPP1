@@ -1,9 +1,23 @@
 <?php
-$miobjeto=new stdClass();
-$miobjeto->Usuario=$_GET['Usuario'];
-$miobjeto->Contraseña=$_GET['Contraseña'];
 
-$archivo=fopen('usuarios.txt','a');
-fwrite($archivo,json_encode($miobjeto)."\n");
-fclose($archivo);
+$archivoVehiculo = fopen("Vehiculo.txt", "r") or die("Imposible arbrir el archivo vehiculo");
+
+	while(!feof($archivoVehiculo)) 
+	{
+		$objetoVehiculo = json_decode(fgets($archivoVehiculo));
+		if ($objetoVehiculo->Patente == $_GET['Patente'])
+		{	
+			echo "SIIIIIIIIIIIIIIIIIIIII";
+			exit();
+
+		}
+		else
+		{
+			echo "nooooooo";
+			exit();	
+		}
+    }
+
+fclose($archivoVehiculo);
+exit();	
 ?>

@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/IconoEsta.png" sizes="16x16" type="image/png">
-    
-    <title>Marmori Estacionamientos</title>
+
+    <title>Facturar - Marmori Est.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,35 +28,30 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="Registro.php">Registro<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="Login.php">Ingresar</a>
-            </li>
-            <li class="nav-item active">
               <a class="nav-link disabled" href="MasInfo.php" target="_blank">Mas info</a>
             </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
         </div>
       </nav>
     </header>
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Marmori Estacionamientos SA<em></h1>
-      <p class="lead"><h2>Primer sistema de estacionamiento con cobro digital</h2></p>
-      <p><h4>"El arte de estacionar"</h4></p>
+      <center>
+      
+        
+        <form action="action/HacerFacturar.php">
+                <h1>Patente</h1><br>
+                <input autocomplete="off" class="navbar-brand" type="text" name="Patente" value="" required>
+                <br><br>
+                <input class="navbar-brand" type="submit" value="Facturar">
+          </form> 
+      </center>
     </main>
-    <center>
-     <img src="https://www.reporteindigo.com/wp-content/uploads/2018/07/920_NOMICS_1531_30-660x437.jpg"height=350” width=1000”>
-     </center>
+
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Te interesaria<a href="TrabajaCN.php" target="_blank"> trabajar con nosotos? </a>.Gran oportunidad de desarrollo.</span>
+        <span class="text-muted">"El arte de estacionar".</span>
       </div>
     </footer>
 

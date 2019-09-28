@@ -4,3 +4,8 @@
 {"Usuario":"dsd","Clave":"dsd"}
 {"Usuario":"ds","Clave":"ds"}
 {"Usuario":"giu","Clave":"gfdg"}
+{"Usuario":"SDS","Clave":"SDSD"}
+{"Usuario":"ER","Clave":"RE"}
+{"Usuario":"tr","Clave":"trt"}
+{"Usuario":"fsd","Clave":"fd"}
+{"Usuario":"re","Clave":"er"}

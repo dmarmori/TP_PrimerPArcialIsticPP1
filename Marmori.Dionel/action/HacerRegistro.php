@@ -7,6 +7,7 @@ $archivo=fopen('usuarios.txt','a');
 fwrite($archivo,json_encode($miobjeto)."\n");
 fclose($archivo);
 
+
 header("Location: page/RegistroOk.php");
 
 ?>
