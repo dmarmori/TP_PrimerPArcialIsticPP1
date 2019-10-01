@@ -44,6 +44,25 @@
                 <h1>Patente</h1><br>
                 <input autocomplete="off" class="navbar-brand" type="text" name="Patente" value="" required>
                 <br><br>
+        <?php 
+        if (isset($_GET['exito']))
+        {        
+            echo '<p>Vehiculo facturado!</p>'; 
+        }
+        else if (isset($_GET['cobrar'])) 
+        { 
+          $aPagar = $_GET['cobrar'];
+          $ingreso = $_GET['ingreso'];
+          $salida = $_GET['salida'];
+          echo "<p>Fecha de ingreso: ".date("Y-m-d h:i:sa",$ingreso)."</p><br>";
+          echo "<p>Fecha de salida: ".date("Y-m-d h:i:sa",$salida)."</p><br>";
+          echo "<p>Se facturo: $".$aPagar."</p><br>";
+        }
+        else if (isset($_GET['error'])) 
+        {
+          echo '<p>Patente no encontrada, Intente nuevamente!</p>';  
+        }
+        ?>
                 <input class="navbar-brand" type="submit" value="Facturar">
           </form> 
       </center>

@@ -1,23 +1,47 @@
 <?php
-
-$archivoVehiculo = fopen("Vehiculo.txt", "r") or die("Imposible arbrir el archivo vehiculo");
-
-	while(!feof($archivoVehiculo)) 
-	{
-		$objetoVehiculo = json_decode(fgets($archivoVehiculo));
-		if ($objetoVehiculo->Patente == $_GET['Patente'])
-		{	
-			echo "SIIIIIIIIIIIIIIIIIIIII";
-			exit();
-
-		}
-		else
+	$PrecioF = 100;	
+	$contadorF = 10;
+	$borrar = false;
+	
+	date_default_timezone_set('America/Argentina/Buenos_Aires');
+	$SalidaHora = mktime(); 
+	$PatenteIngresada = $_GET['Patente'];
+	
+		$archivo = fopen("Vehiculos.txt", "r") or die("Imposible arbrir el archivo");	
+		while(!feof($archivo)) 
 		{
-			echo "nooooooo";
-			exit();	
-		}
-    }
+			$objetoVehiculo = json_decode(fgets($archivo));
 
-fclose($archivoVehiculo);
-exit();	
+			$objetoPatente = $objetoVehiculo->Patente;
+			$horaEntrada = $objetoVehiculo->Horario;
+
+			if ($objetoPatente == $PatenteIngresada) 
+			{	
+				$borrar = true;
+				$diffSegundos = $horaSalida - $horaEntrada;
+				$diffAlternativo = $diffSegundos;
+				/*while ($diffAlternativo >= 3600) 
+				{			
+					if ($diffAlternativo >= 3600) 
+					{
+						$contadorF++;
+						$diffAlternativo = $diffAlternativo - 3600;
+					}
+					else if ($diffAlternativo >= 1800)
+					{
+						$contadorF++;
+					}					
+				}*/
+				$resultado = $contadorF * $PrecioF;
+				//$resultado = $contadorF * $PrecioF;
+				header("Location: /Marmori/Facturar.php?cobrar=".$resultado."&ingreso=".$horaEntrada."&salida=".$horaSalida);
+				fclose($archivo);
+				exit();
+			}
+			else
+			{
+				header("Location: /Marmori/Facturar.php?error=patenteinexistente");
+			}
+      	}
+      		
 ?>
