@@ -45,6 +45,7 @@
                 <input autocomplete="off" class="navbar-brand" type="text" name="Patente" value="" required>
                 <br><br>
         <?php 
+        date_default_timezone_set('America/Argentina/Buenos_Aires');
         if (isset($_GET['exito']))
         {        
             echo '<p>Vehiculo facturado!</p>'; 
