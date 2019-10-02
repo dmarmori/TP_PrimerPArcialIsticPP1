@@ -1,10 +1,8 @@
 <?php
 	$miobjetoVehiculo=new stdClass();
 
-	//$IngresoHora = time();
 	date_default_timezone_set('America/Argentina/Buenos_Aires');
-	$IngresoHora = mktime(); 
-	//$IngresoHora = date ('H:i:s',$IngresoHora);
+	$IngresoHora = mktime();
 
 	$miobjetoVehiculo->Patente = $_GET['Patente'];
 	$miobjetoVehiculo->Horario = $IngresoHora;
