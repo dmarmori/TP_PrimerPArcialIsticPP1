@@ -1,2 +1,2 @@
-# TP_PrimerPArcialIsticPP1
-Repositorio de Ejercicios de los alumnos
+# Dionel Marmori
+Alumno 1er año INSTIC
