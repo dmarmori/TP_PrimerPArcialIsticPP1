@@ -18,29 +18,35 @@
 			if ($objetoPatente == $PatenteIngresada) 
 			{	
 				$diffSegundos = $SalidaHora - $horaEntrada;
-				$diffAlternativo = $diffSegundos;
-				while ($diffAlternativo >= 3) 
+
+				while ($diffSegundos >= 3) 
 				{			
-					if ($diffAlternativo >= 3) 
+					if ($diffSegundos >= 3) 
 					{
 						$contadorF++;
-						$diffAlternativo = $diffAlternativo - 3;
+						$diffSegundos = $diffSegundos - 3;
 					}
-					else if ($diffAlternativo >= 1)
+					else if ($diffSegundos >= 1)
 					{
 						$contadorF++;
 					}					
 				}
 				$resultado = $contadorF * $PrecioF;
 
-				header("Location: /Marmori/Facturar.php?cobrar=".$resultado."&ingreso=".$horaEntrada."&salida=".$SalidaHora);
+				//header("Location: /Marmori/Facturar.php?exito");
+				header("Location: /Marmori/Facturar.php?exito=exito&cobrar=".$resultado."&ingreso=".$horaEntrada."&salida=".$SalidaHora);
 				fclose($archivo);
 				exit();
 			}
 			else
 			{
-				header("Location: /Marmori/Facturar.php?error=patenteinexistente");
+				header("Location: /Marmori/Facturar.php?error");
 			}
       	}
+
+      	//break;
+      	//Prueba para deneter el .php y verificar algo!
+      	//var_dump("prueba");
+      	//die();
       		
 ?>

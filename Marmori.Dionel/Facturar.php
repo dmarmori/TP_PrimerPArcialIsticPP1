@@ -48,9 +48,9 @@
         date_default_timezone_set('America/Argentina/Buenos_Aires');
         if (isset($_GET['exito']))
         {        
-            echo '<p>Vehiculo facturado!</p>'; 
+            echo '<p style="color:green">Vehiculo facturado!</p>'; 
         }
-        else if (isset($_GET['cobrar'])) 
+       if (isset($_GET['cobrar'])) 
         { 
           $aPagar = $_GET['cobrar'];
           $ingreso = $_GET['ingreso'];
@@ -61,7 +61,7 @@
         }
         else if (isset($_GET['error'])) 
         {
-          echo '<p>Patente no encontrada, Intente nuevamente!</p>';  
+          echo '<p style="color:red">Patente no encontrada, Intente nuevamente!</p>';  
         }
         ?>
                 <input class="navbar-brand" type="submit" value="Facturar">
