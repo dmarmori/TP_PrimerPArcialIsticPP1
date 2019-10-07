@@ -19,19 +19,24 @@
 			{	
 				$diffSegundos = $SalidaHora - $horaEntrada;
 
-				while ($diffSegundos >= 3) 
+				while ($diffSegundos >= 3600) 
 				{			
-					if ($diffSegundos >= 3) 
+					if ($diffSegundos >= 3600) 
 					{
 						$contadorF++;
-						$diffSegundos = $diffSegundos - 3;
+						$diffSegundos = $diffSegundos - 3600;
 					}
-					else if ($diffSegundos >= 1)
+					else if ($diffSegundos >= 1800)
 					{
 						$contadorF++;
 					}					
 				}
 				$resultado = $contadorF * $PrecioF;
+
+				//Guardo datos de facturado en archivo
+				$archivoVehiculos=fopen('VihiculosFact.txt','a');
+				//fwrite($archivo,json_encode($miobjeto)."\n");
+				fclose($archivoVehiculos);
 
 				//header("Location: /Marmori/Facturar.php?exito");
 				header("Location: /Marmori/Facturar.php?exito=exito&cobrar=".$resultado."&ingreso=".$horaEntrada."&salida=".$SalidaHora);
