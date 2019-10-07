@@ -46,7 +46,7 @@
 
 
 				//Guardo datos de facturado en archivo
-				$archivoVehiculos=fopen('VihiculosFact.txt','a');
+				$archivoVehiculos=fopen('VehiculosFact.txt','a');
 				fwrite($archivoVehiculos,json_encode($miobjetoVehiculoFact)."\n");
 				fclose($archivoVehiculos);
 

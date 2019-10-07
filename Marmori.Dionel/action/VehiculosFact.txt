@@ -1,0 +1,3 @@
+{"PatenteFact":"AAA","HorarioIniFact":1570058065,"HorarioSalFact":1570414745,"ValorFacturado":9900}
+{"PatenteFact":"BBB","HorarioIniFact":1570058070,"HorarioSalFact":1570414748,"ValorFacturado":9900}
+{"PatenteFact":"CCC","HorarioIniFact":1570058075,"HorarioSalFact":1570414750,"ValorFacturado":9900}

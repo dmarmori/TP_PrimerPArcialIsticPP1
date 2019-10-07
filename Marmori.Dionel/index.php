@@ -40,6 +40,9 @@
               <a  style="color:red"; class="nav-link" href="Facturar.php"> $Facturar</a>
             </li>
             <li class="nav-item active">
+              <a  style="color:blue"; class="nav-link" href="action/HacerVehiculoFacturado.php"> ConsultarFacturados</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link disabled" href="MasInfo.php" target="_blank">Mas info</a>
             </li>
           </ul>
