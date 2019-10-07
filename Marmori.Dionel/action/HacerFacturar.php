@@ -1,4 +1,9 @@
 <?php
+	
+	//Creo la clase para llenar el archivos VehiculosFact
+	$miobjetoVehiculoFact=new stdClass();
+
+	//Inicializo variables
 	$PrecioF = 100;	
 	$contadorF = 0;
 	
@@ -31,15 +36,23 @@
 						$contadorF++;
 					}					
 				}
-				$resultado = $contadorF * $PrecioF;
+				$ValorCobrar = $contadorF * $PrecioF;
+
+				//Paso parametros a la clase miobjetoVehiculoFact
+				$miobjetoVehiculoFact->PatenteFact = $objetoPatente;
+				$miobjetoVehiculoFact->HorarioIniFact = $horaEntrada;
+				$miobjetoVehiculoFact->HorarioSalFact = $SalidaHora;
+				$miobjetoVehiculoFact->ValorFacturado = $ValorCobrar;
+
 
 				//Guardo datos de facturado en archivo
 				$archivoVehiculos=fopen('VihiculosFact.txt','a');
-				//fwrite($archivo,json_encode($miobjeto)."\n");
+				fwrite($archivoVehiculos,json_encode($miobjetoVehiculoFact)."\n");
 				fclose($archivoVehiculos);
 
+				//Envio datos Factrar.php para mostrar resltado en pantalla
 				//header("Location: /Marmori/Facturar.php?exito");
-				header("Location: /Marmori/Facturar.php?exito=exito&cobrar=".$resultado."&ingreso=".$horaEntrada."&salida=".$SalidaHora);
+				header("Location: /Marmori/Facturar.php?exito=exito&cobrar=".$ValorCobrar."&ingreso=".$horaEntrada."&salida=".$SalidaHora);
 				fclose($archivo);
 				exit();
 			}
