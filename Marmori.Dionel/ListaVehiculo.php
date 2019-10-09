@@ -36,9 +36,15 @@
     <main role="main" class="container">
       <center>
         <form>
-      <h1 style="color:green";>Vechiculos Registrados<h1>
+
+      <h3 style="color:green";>Vechiculos Registrados<h3>
       <br><br>
-      <ol>  
+      <table>
+        <tr>
+          <th>Patente</th>
+          <th>Hora Ingreso</th>
+        </tr>  
+
        <?php 
        date_default_timezone_set('America/Argentina/Buenos_Aires');
 
@@ -48,12 +54,17 @@
             $objetoVehiculo = json_decode(fgets($archivoVehiculo));
             if (!$objetoVehiculo=="")
             {
-              echo "<p><li>Patente: ".$objetoVehiculo->Patente."-HoraIng: ".
-              date("Y-m-d h:i:sa",$objetoVehiculo->Horario)."</li></p><br>";
+               echo "<tr>"; 
+                echo "<td>".$objetoVehiculo->Patente
+                    ."------"
+                    ."</td><td>".date("Y-m-d h:i:sa",$objetoVehiculo->Horario).
+          "</td></tr>";
+
+            //  echo "<p><li>Patente: ".$objetoVehiculo->Patente."-HoraIng: ".
+              //date("Y-m-d h:i:sa",$objetoVehiculo->Horario)."</li></p><br>";
             }
         } 
         ?>
-      </ol>
         </form>
       </center> 
          

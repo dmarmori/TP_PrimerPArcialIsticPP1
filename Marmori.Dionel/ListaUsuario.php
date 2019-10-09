@@ -36,7 +36,7 @@
     <main role="main" class="container">
       <center>
         <form>
-      <h1 style="color:green";>Usuarios Registrados<h1>
+      <h4 style="color:green";>Usuarios Registrados<h4>
       <br><br>
       <ol>  
        <?php 

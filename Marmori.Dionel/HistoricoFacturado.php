@@ -43,7 +43,7 @@
           <th>Patente</th>
           <th>Ingreso</th>
           <th>Egreso</th>
-          <th>Cobrado</th>
+          <th>Facturado</th>
         </tr>
        
   <?php
@@ -78,12 +78,7 @@
           ."------"
           ."</td><td>$".$ValorFacturado.
           "</td></tr>";
-    /*echo "Patente: ".$PatenteFact."<br>"
-        ."- Fecha-Hora Entrada: ".date("Y-m-d h:i:sa",$HorarioIniFact)."<br>"
-        ." - Fecha-Hora Salida: ".date("Y-m-d h:i:sa",$HorarioSalFact)."<br>"
-        ." - Valor Facturado: $".$ValorFacturado
-      ."<br><br><br>";*/
-
+          
     $CountVehiculos++;
     $AcumulaPrecio = $AcumulaPrecio + $ValorFacturado;
     }
