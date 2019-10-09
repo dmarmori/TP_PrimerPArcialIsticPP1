@@ -58,8 +58,12 @@
 
   while(!feof($archivoListaFact)) 
   {
+   
+    
     $objetoVehiculos = json_decode(fgets($archivoListaFact));
     //Guardo los datos del archivo VehiculosFact en variables para manipular luego.
+    if (!$objetoVehiculos=="")
+    {  
     $PatenteFact = $objetoVehiculos->PatenteFact;
     $HorarioIniFact = $objetoVehiculos->HorarioIniFact;
     $HorarioSalFact = $objetoVehiculos->HorarioSalFact;
@@ -82,7 +86,7 @@
 
     $CountVehiculos++;
     $AcumulaPrecio = $AcumulaPrecio + $ValorFacturado;
-
+    }
   }
   
   fclose($archivoListaFact);

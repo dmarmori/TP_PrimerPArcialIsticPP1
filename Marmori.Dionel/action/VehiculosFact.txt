@@ -1,3 +1,3 @@
-{"PatenteFact":"AAA","HorarioIniFact":1570058065,"HorarioSalFact":1570414745,"ValorFacturado":9900}
-{"PatenteFact":"BBB","HorarioIniFact":1570058070,"HorarioSalFact":1570414748,"ValorFacturado":9900}
-{"PatenteFact":"CCC","HorarioIniFact":1570058075,"HorarioSalFact":1570414750,"ValorFacturado":9900}
+{"PatenteFact":"AAA123","HorarioIniFact":1570590971,"HorarioSalFact":1570640732,"ValorFacturado":1300}
+{"PatenteFact":"BBB123","HorarioIniFact":1570590976,"HorarioSalFact":1570640747,"ValorFacturado":1300}
+{"PatenteFact":"CCC1234","HorarioIniFact":1570590981,"HorarioSalFact":1570640750,"ValorFacturado":1300}
