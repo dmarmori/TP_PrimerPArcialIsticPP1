@@ -1,2 +1,3 @@
 {"Usuario":"sa","Clave":"1010"}
-{"Usuario":"dio","Clave":"1234"}
+{"Usuario":"dmarmori","Clave":"jajaja1234"}
+{"Usuario":"lolo","Clave":"3456"}

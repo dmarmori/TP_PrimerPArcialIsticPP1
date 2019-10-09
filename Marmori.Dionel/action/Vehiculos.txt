@@ -1,5 +1,4 @@
-{"Patente":"AAA","Horario":1570058065}
-{"Patente":"BBB","Horario":1570058070}
-{"Patente":"CCC","Horario":1570058075}
-{"Patente":null,"Horario":1570414549}
-{"Patente":null,"Horario":1570414554}
+{"Patente":"AAA123","Horario":1570590971}
+{"Patente":"BBB123","Horario":1570590976}
+{"Patente":"CCC1234","Horario":1570590981}
+{"Patente":"DDD9999","Horario":1570590986}

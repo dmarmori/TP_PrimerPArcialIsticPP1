@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 	
 	$CountVehiculos = 0;
 	$AcumulaPrecio = 0;

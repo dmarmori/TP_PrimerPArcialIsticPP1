@@ -31,16 +31,22 @@
               <a class="nav-link" href="Registro.php">Registro<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
+              <a  style="color:green"; class="nav-link" href="ListaUsuario.php">UsuariosRegistrados</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="Login.php">Ingresar</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="Vehiculo.php">IngresaVehiculo</a>
             </li>
             <li class="nav-item active">
-              <a  style="color:red"; class="nav-link" href="Facturar.php"> $Facturar</a>
+              <a style="color:green"; class="nav-link" href="ListaVehiculo.php">VehiculosIngresados</a>
             </li>
             <li class="nav-item active">
-              <a  style="color:blue"; class="nav-link" href="action/HacerVehiculoFacturado.php"> ConsultarFacturados</a>
+              <a  style="color:red"; class="nav-link" href="Facturar.php">$Facturar</a>
+            </li>
+            <li class="nav-item active">
+              <a  style="color:blue"; class="nav-link" href="HistoricoFacturado.php"> hisctoricoFacturados</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link disabled" href="MasInfo.php" target="_blank">Mas info</a>
