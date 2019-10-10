@@ -1,3 +1,4 @@
 {"PatenteFact":"AAA123","HorarioIniFact":1570590971,"HorarioSalFact":1570640732,"ValorFacturado":1300}
 {"PatenteFact":"BBB123","HorarioIniFact":1570590976,"HorarioSalFact":1570640747,"ValorFacturado":1300}
 {"PatenteFact":"CCC1234","HorarioIniFact":1570590981,"HorarioSalFact":1570640750,"ValorFacturado":1300}
+{"PatenteFact":"EEE111","HorarioIniFact":1570192477,"HorarioSalFact":1570662546,"ValorFacturado":13000}

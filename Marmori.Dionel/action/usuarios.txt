@@ -1,3 +1,5 @@
 {"Usuario":"sa","Clave":"1010"}
 {"Usuario":"dmarmori","Clave":"jajaja1234"}
 {"Usuario":"lolo","Clave":"3456"}
+{"Usuario":"delpotro","Clave":"tenista"}
+{"Usuario":"pepe","Clave":"hola"}

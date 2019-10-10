@@ -1,3 +1,11 @@
+<?php 
+ if (isset($_GET['login']))
+  {        
+    session_start(); 
+  }
+  
+  ?>
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -17,8 +25,10 @@
   </head>
 
   <body>
+        
 
     <header>
+       
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="/Marmori/index.php">Inicio</a>
@@ -26,9 +36,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              
+        <?php 
+        
+        if (isset($_SESSION['IdLogin']))
+        {    
+            echo "<a class='nav-link'>".$_SESSION['IdLogin']."</a>";
+        }
+         
+        ?>
+          </li>
+          </ul>
+          
         </div>
       </nav>
+
+
     </header>
+    
 
     <!-- Begin page content -->
     <main role="main" class="container">

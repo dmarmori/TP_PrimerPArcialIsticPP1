@@ -10,12 +10,16 @@
 			{				 
 				if ($objeto->Clave == $_GET['Clave'])
 				{
-					header("Location: page/ok.php");
+					$usuariologin = $objeto->Usuario;
+					session_start();
+					$_SESSION['IdLogin']=$usuariologin;
+					header("Location: page/ok.php?login=login");
 					fclose($archivo);
 					exit();
 				}
 				else
 				{
+					
 					header("Location: page/nok.php");
 					fclose($archivo);
 					exit();
